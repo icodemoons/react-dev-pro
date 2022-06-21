@@ -1,0 +1,397 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+ :root {
+   --bg: #242526;
+   --bg-accent: #484a4d;
+   --text-color: #dadce1;
+   --nav-size: 60 px;
+   --border-radius: 8px;
+   --speed: 500ms;
+   font-size: 16px;
+ }
+
+ @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ canvas {
+   z-index: -100;
+   background-color: white;
+   
+ }
+ 
+
+ .row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row > div {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #bbb;
+  margin: 4px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.row > div.green {
+  --background: #5ac85a;
+  --border-color: #5ac85a;
+  animation: flip 0.5s ease forwards;
+}
+.row > div.grey {
+  --background: #a1a1a1;
+  --border-color: #a1a1a1;
+  animation: flip 0.6s ease forwards;
+}
+.row > div.yellow {
+  --background: #e2cc68;
+  --border-color: #e2cc68;
+  animation: flip 0.5s ease forwards;
+}
+.row > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.row > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.row > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.row > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.row.current > div.filled {
+  animation: bounce 0.2s ease-in-out forwards;
+}
+.keypad {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.keypad > div {
+  margin: 5px;
+  width: 40px;
+  height: 50px;
+  background: #eee;
+  display: inline-block;
+  border-radius: 6px;
+  line-height: 50px;
+}
+.keypad > div.green {
+  background: #5ac85a;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.keypad > div.yellow {
+  background: #e2cc68;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.keypad > div.grey {
+  background: #a1a1a1;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.modal {
+  background: rgba(255,255,255,0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.modal div {
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.modal .solution {
+  color: #ff004c;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* keyframe animations */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background: #fff;
+    border-color: #333;
+  }
+  45% {
+    transform: rotateX(90deg);
+    background: white;
+    border-color: #333;
+  }
+  55% {
+    transform: rotateX(90deg);
+    background: var(--background);
+    border-color: var(--border-color);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background: var(--background);
+    border-color: var(--border-color);
+    color: #eee;
+  }
+}
+
+@keyframes bounce {
+  0% { 
+    transform: scale(1);
+    border-color: #ddd;
+  }
+  50% { 
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    border-color: #333;
+  }
+}
+ 
+ 
+ h1 {
+    margin: 0 0 30px 0;
+   font-size: 1.2em;
+   padding: 20px 0;
+   border-bottom: solid #eee;
+   color: #333;
+ }
+ 
+ .board {
+   border: 1rem solid #2fff71;
+   background: #2fff71;
+   width: 65vh;
+   margin: auto;
+   margin-bottom: 20px;
+   height: 65vh;
+   display: grid;
+   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+   gap: 1rem;
+ }
+
+ .Board {
+  margin: 2em auto;
+  display: grid;
+  grid-gap: 2px;
+  width: 45vw;
+  height: 50vw;
+  background: rgb(32, 0, 64);
+  border: 10px solid rgb(32, 0, 64);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+#correct {
+  background-color: #528d4e;
+}
+
+#almost {
+  background-color: #b49f39;
+}
+
+#error {
+  background-color: #3a393c;
+}
+
+
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+
+
+#big {
+  width: 100px;
+}
+#disabled {
+  background-color: #3a393c;
+}
+ 
+ .squares {
+   background: #272727;
+   border: none;
+   font-size: 5rem;
+   /* font-weight: 800; */
+   cursor: pointer;
+   outline: none;
+ }
+ 
+ .X {
+   color: red;
+ }
+ .O {
+   color: green;
+ }
+
+ 
+
+ .Tetris {
+  position: relative;
+}
+
+.Preview {
+  position: absolute;
+  top: 0;
+  left: 72.2vw;
+  background: rgba(0, 0, 0, 0.1);
+  border: 10px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.Preview-board {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 11vw;
+  height: 11vw;
+}
+
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  z-index: 100;
+}
+
+.Button {
+  padding: 40px 80px;
+  font-size: 2em;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 60px;
+  cursor: pointer;
+}
+
+.GameStats {
+  position: absolute;
+  width: 22vw;
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.GameStats__left {
+  right: 0;
+  top: 22vh;
+  text-align: left;
+}
+
+.GameStats__right {
+  right: 0;
+  bottom: 0;
+  text-align: left;
+}
+
+.GameStats .value {
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.GameController {
+  position: absolute;
+  top: -100em;
+}
+
+.BoardCell {
+  width: auto;
+  border-radius: 6px;
+  position: relative;
+}
+
+.tetromino {
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.tetromino .Sparkle {
+  position: absolute;
+  z-index: 10;
+  width: 6px;
+  height: 6px;
+  left: -2px;
+  top: -2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px 4px;
+}
+
+.tetromino.ghost {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.tetromino.ghost .Sparkle {
+  opacity: 0;
+}
+
+.tetromino__i {
+  background-color: rgba(80, 227, 230, 1);
+}
+.tetromino__j {
+  background-color: rgba(36, 95, 223, 1);
+}
+.tetromino__l {
+  background-color: rgba(223, 173, 36, 1);
+}
+.tetromino__o {
+  background-color: rgba(223, 217, 36, 1);
+}
+.tetromino__s {
+  background-color: rgba(48, 211, 56, 1);
+}
+.tetromino__t {
+  background-color: rgba(132, 61, 198, 1);
+}
+.tetromino__z {
+  background-color: rgba(240, 80, 195, 1);
+}
+

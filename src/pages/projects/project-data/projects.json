@@ -1,0 +1,44 @@
+ [
+    {
+      "id": 1,
+      "name": "Weather Look up",
+      "href": "/projects/weather",
+      "imageSrc": "/images/projects/weather.png",
+      "imageAlt": "Weather Search"
+    },
+    {
+      "id": 2,
+      "name": "Google Search Clone",
+      "href": "/projects/google",
+      "imageSrc": "/images/projects/google2.png",
+      "imageAlt": "Google Logo"
+    },
+    {
+      "id": 3,
+      "name": "NY Times",
+      "href": "/projects/ny-times",
+      "imageSrc": "/images/projects/nyt-icon.png",
+      "imageAlt": "NYT Logo"
+    },
+    {
+      "id": 4,
+      "name": "NASA",
+      "href": "/projects/nasa",
+      "imageSrc": "/images/projects/nasa2.png",
+      "imageAlt": "NASA"
+    },
+    {
+      "id": 5,
+      "name": "Games",
+      "href": "/projects/games",
+      "imageSrc": "/images/mystery.png",
+      "imageAlt": "Games"
+    },
+    {
+      "id": 6,
+      "name": "Data Table",
+      "href": "/projects/data-tool",
+      "imageSrc": "/images/owl.png",
+      "imageAlt": "People"
+    }
+  ]
