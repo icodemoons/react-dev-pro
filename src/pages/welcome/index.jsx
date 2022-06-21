@@ -19,8 +19,6 @@ export default function Welcome({}) {
               </a>{" "}
             </p>
 
-
-            <p className="text-2xl pt-10 text-white lg:text-4xl "> Thank you </p>
           </div>
         </div>
       </Container>
