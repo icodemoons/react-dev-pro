@@ -46,7 +46,7 @@ export default function GoogleSearchPage({}) {
               />
             </div>
           </div>
-          <h2 className="text mt-10 text-center text-4xl  font-extrabold tracking-tight sm:text-2xl md:text-2xl ">
+          <h2 className=" mt-10 text-center lg:text-4xl md:text-3xl text-3xl font-extrabold tracking-tight sm:text-3xl">
             Try your search now with instant results
           </h2>
           <p className=" text mt-10 text-center text-lg font-extrabold    tracking-tight sm:text-lg md:text-2xl "></p>

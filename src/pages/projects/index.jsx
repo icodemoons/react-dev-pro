@@ -19,7 +19,7 @@ export default function ProjectsPage({}) {
 
   return (
     <>
-      <div className="mx-auto p-10">
+      <div className="mx-auto m-20 p-10">
       <div>
         <p className=" mx-auto mt-5 mb-10  w-full  text-center text-xl text-black md:text-3xl ">
           Projects built with Tailwind | React | Next JS
@@ -78,7 +78,7 @@ export default function ProjectsPage({}) {
                 </div>
               </Transition>
 
-              <div className="mt-4 flex justify-between  text-xl">
+              <div className="mt-4 p-20 flex justify-between  text-xl">
                 <div className="text-center text-xl">
                   <a href={project.href}>
                     <h3 className="text-center text-xl text-black   ">
