@@ -9,7 +9,7 @@ export default function Welcome({}) {
           
             <p className="pb-5 text-2xl text-white lg:text-5xl ">
               {" "}
-              Welcome to my Portfolio
+              Welcome to my portfolio
             </p>
 
             <p className="pt-5 text-2xl text-white  lg:text-3xl   ">
