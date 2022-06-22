@@ -37,7 +37,6 @@ export default function ProjectsPage({}) {
               initial={{ opacity: 0 }}
               viewport={{ once: true }}
               whileInView={{ opacity: 1 }}
-              animate={{ rotate: 360 }}
               transition={{ duration: 2 }}
               whileHover={{ scale: 1.5 }}
               className="mx-auto "
