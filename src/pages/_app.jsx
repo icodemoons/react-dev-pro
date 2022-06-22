@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import "./globals.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/features/layout";

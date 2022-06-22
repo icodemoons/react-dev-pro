@@ -24,8 +24,7 @@ export default function CoverLetter({ }) {
             I grew up entertaining and performing in which I had the privilege to DJ, breakdance, and host events nationwide. I had the opportunity to work with celebrities and performed as a breakdancer at parties such as Ultra Music Festival in Miami, FL, and Austin City Limits in Austin, TX. My life quickly changed when my dance partner passed away. In 2014, I met an entrepreneurial friend that helped me pivot my life.
             <br /><br />
 
-            He ran a boutique business and web development agency. Right away I was immersed in a world of creativity, business development, marketing, and growth hacking- you name it and we did it! We wore many many hats and had lots of challenges. There was a year when my friend was in and out of the hospital and I had to hold it down, otherwise, we would have lost momentum. So, that meant me getting out of my comfort zone. It was a difficult year but we pulled through with our two-man team. When my friend's father passed from being exposed to a bad chemical, my friend and I used our strengths, and our commitment to create a health and wellness company. We have been successful and are now expanding globally.
-
+            He ran a boutique business and web development agency. Right away I was immersed in a world of creativity, business development, marketing, and growth hacking- you name it and we did it! We wore many many hats and had lots of challenges. There was a year when my friend was in and out of the hospital and I had to hold it down, otherwise, we would have lost momentum. So, that meant me getting out of my comfort zone. It was a difficult year but we pulled through with our two-man team. When my friend's father passed from being exposed to a bad chemical, my friend and I used our strengths, and our commitment to create a health and wellness company. It has been successful and is now expanding globally.
 
             <br />
             <br />
@@ -37,7 +36,7 @@ export default function CoverLetter({ }) {
             <span className="bg-yellow-400 text-black mr-2">
               Thank you, I look forward to working with you all.
 
-              Peace!
+              Best!
 
             </span>
           </p>

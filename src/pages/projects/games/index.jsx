@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-
 import Container from "@/features/container";
 import Link from "next/link";
 import Tictactoe from "@/features/projects/games/tictactoe";
 
-export default function Games({}) {
+
+export default function Games() {
   const [type, setType] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,20 +13,11 @@ export default function Games({}) {
       case "tictactoe":
         return <Tictactoe />;
       default:
+        console.log("Sorry, we are out of " + type + ".");
         return "";
     }
   }
-
-  function ToggleContent({ header, content }) {
-    return (
-      <motion.div layout onClick={() => setIsOpen(!isOpen)}>
-        <motion.h2 layout>{header}</motion.h2>
-        {isOpen ? content : null}
-      </motion.div>
-    );
-  }
-  const [mouse, setMouse] = useState([0, 0, false]);
-  const [mx, my, isActive] = mouse;
+ 
   return (
     <>
       <Container className=" text-black">
@@ -56,6 +46,7 @@ export default function Games({}) {
                       onClick={() => setType("tictactoe")}
                     />
                   </div>
+                  
 
 
                 </div>{" "}
