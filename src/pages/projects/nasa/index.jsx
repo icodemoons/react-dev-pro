@@ -8,7 +8,7 @@ const NASA_API_KEY = process.env.NEXT_PUBLIC_NASA_API_KEY;
 
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=10`;
 
-export default function NasaInfo({}) {
+export default function Nasa({}) {
   const [nasaArticles,  setNasaArticles] = useState([]);
   const [isHovering, setIsHovering] = useState(false);
 
@@ -46,6 +46,7 @@ export default function NasaInfo({}) {
                   Below are images selected from NASA's Image of the Day
                   website.
                 </p>
+
                 {nasaArticles.map((article) => (
                   <figure class="shadowtext-white my-8 items-center rounded-xl p-2 py-3 px-6">
                     <NasaCard {...article} />
