@@ -18,10 +18,6 @@ export default function Games({}) {
     }
   }
 
-  // useEffect(() =>{
-  //     function 
-  // }, [mouse])
-
   function ToggleContent({ header, content }) {
     return (
       <motion.div layout onClick={() => setIsOpen(!isOpen)}>

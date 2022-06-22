@@ -6,10 +6,10 @@ import Section from "@/features/section";
 
 const NASA_API_KEY = process.env.NEXT_PUBLIC_NASA_API_KEY;
 
-const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=5`;
+const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=10`;
 
 export default function NasaInfo({}) {
-  const [nasaArticles, setNasaArticles] = useState([]);
+  const [nasaArticles,  setNasaArticles] = useState([]);
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(async () => {
@@ -38,7 +38,7 @@ export default function NasaInfo({}) {
               </div>
               <div className=" mx-auto  w-full text-center">
                 <img
-                  className=" mx-auto text-center lg:w-1/6"
+                  className=" mx-auto w-1/6 text-center"
                   src="https://apod.nasa.gov/apod/image/0307/gravityearth2_grace.gif"
                 />
 
