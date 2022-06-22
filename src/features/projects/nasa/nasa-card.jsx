@@ -13,7 +13,11 @@ function StarSvg() {
 }
 
 export default function NasaCard({
-  abstract
+  explanation,
+  title,
+  hdurl,
+  date,
+  copyright,
 }) {
   return (
     <>
