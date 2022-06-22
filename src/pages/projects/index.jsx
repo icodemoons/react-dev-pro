@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { useTimeoutFn } from "react-use";
 import { motion } from "framer-motion";
 import projects from "./project-data/projects.json";
-import Todo from "features/todo/";
+
 export default function ProjectsPage({}) {
   let [isShowing, setIsShowing] = useState(true);
   let [reset, resetIsShowing] = useTimeoutFn(() => setIsShowing(true), 500);
@@ -91,7 +91,7 @@ export default function ProjectsPage({}) {
         ))}
       </div>
       </div>
-      <Todo />
+
     </>
   );
 }
