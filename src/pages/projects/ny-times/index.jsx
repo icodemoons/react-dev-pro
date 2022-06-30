@@ -1,45 +1,37 @@
 import { useState } from "react";
-
+import Link from "@/ui/link";
 import ApiResults from "@/features/projects/ny-times/api-results";
 import News from "@/features/projects/ny-times/news";
 import Book from "@/features/projects/ny-times/book";
-
 import Container from "@/features/container";
-
-import Link from "@/ui/link";
 
 const NY_NEWS_API_KEY = process.env.NEXT_PUBLIC_NY_NEWS_API_KEY;
 const NY_BOOKS_API_KEY = process.env.NEXT_PUBLIC_NY_BOOKS_API_KEY;
 
-export default function NyTimes({}) {
-  const [type, setType] = useState("articles");
+export default function NyTimes() {
+  const [type, setType] = useState("");
+  function renderType(type) {
 
-  function renderType() {
-    switch (type) {
-      case "news":
-        return (
-          <ApiResults
-            apiUrl={`https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${NY_NEWS_API_KEY}`}
-            renderItem={(results) => <News {...results} />}
-            searchProp="title"
-            renderJson={(json) => json.results}
-          />
-        );
-      case "books":
-        return (
-          <ApiResults
-            apiUrl={`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${NY_BOOKS_API_KEY}`}
-            searchProp="title"
-            renderItem={(book) => <Book {...book} />}
-            renderJson={(json) => json.results.books}
-          />
-        );
-      default:
-        console.log("Sorry, we are out of " + type + ".");
-        return "";
+    if(type === "news") {
+      return    
+    <ApiResults
+    apiUrl={`https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${NY_NEWS_API_KEY}`}
+    renderItem={(results) => <News {...results} />}
+    searchProp="title"
+    renderJson={(json) => json.results}
+  />
+    } else {  (type === "books")
+      return 
+       <ApiResults
+          apiUrl={`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${NY_BOOKS_API_KEY}`}
+          searchProp="title"
+          renderItem={(book) => <Book {...book} />}
+          renderJson={(json) => json.results.books}
+        />
+
     }
   }
-
+  
   return (
     <>
       <Container className=" text-black">
@@ -85,3 +77,5 @@ export default function NyTimes({}) {
     </>
   );
 }
+
+
