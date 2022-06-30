@@ -8,14 +8,7 @@ import projects from "./project-data/projects.json";
 export default function ProjectsPage({}) {
   let [isShowing, setIsShowing] = useState(true);
   let [reset, resetIsShowing] = useTimeoutFn(() => setIsShowing(true), 500);
-  let [isHovered, setHovered] = useState(false);
 
-  function MouseOver(event) {
-    let hover = event.target.style.background;
-  }
-  function MouseOut(event) {
-    event.target.style.background = "";
-  }
 
   return (
     <>
