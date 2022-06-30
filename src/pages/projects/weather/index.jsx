@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Link from "@/ui/link";
+import Link from "next/link";
 import Section from "@/features/section";
 import Container from "@/features/container";
 
@@ -7,10 +7,13 @@ const weatherApiUrlKey = process.env.NEXT_PUBLIC_WEATHER_KEY;
 const astroApiUrlKey = process.env.NEXT_PUBLIC_ASTRO_KEY;
 
 export default function Weather({}) {
+  
   const [query, setQuery] = useState("");
 
   const [weather, setWeather] = useState({});
+
   const [location, setLocation] = useState({});
+
   const [moon, setMoon] = useState([]);
 
   const weatherApiUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiUrlKey}&q=${query}&aqi=no`;
@@ -18,7 +21,6 @@ export default function Weather({}) {
   const astroApiUrl = `https://api.weatherapi.com/v1/astronomy.json?key=${astroApiUrlKey}&q=${query}&dt=2021-09-07`;
 
   function getWeather() {
- 
 
     fetch(weatherApiUrl)
       .then((res) => res.json())
@@ -54,7 +56,7 @@ export default function Weather({}) {
           </span>
           <div className="first-line: m:max-w-5xl mx-auto rounded-xl bg-blue-200  p-10  text-black md:max-w-xl">
             <div className=" mx-auto text-center">
-              <p className="lg:text-4xl text-2xl ">
+              <p className="lg:text-2xl text-2xl ">
                 Check that weather before you go outside! 
               </p>
 

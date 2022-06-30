@@ -1,4 +1,4 @@
-import Link from "@/ui/link";
+
 import { Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { useTimeoutFn } from "react-use";
@@ -49,7 +49,7 @@ export default function ProjectsPage({}) {
       <div className=" absolute -z-50 grid rounded-lg  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div key={project.id} className="group relative  flex-row flex-wrap ">
-            <Link
+            <a
               onClick={() => {
                 setIsShowing(false);
                 resetIsShowing();
@@ -86,7 +86,7 @@ export default function ProjectsPage({}) {
                   </a>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
         ))}
       </div>

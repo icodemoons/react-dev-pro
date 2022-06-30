@@ -1,4 +1,4 @@
-export default function Pill({ href, isActive, children }) {
+export default function Pill({ href, children }) {
   return (
     <li className="mt-1 inline-flex  flex-wrap justify-between space-x-2   text-center text-sm   ">
       <a

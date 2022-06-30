@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import NasaCard from "@/features/projects/nasa/nasa-card";
 import Container from "@/features/container";
-import Link from "@/ui/link";
+import Link from "next/link";
 import Section from "@/features/section";
 
 const NASA_API_KEY = process.env.NEXT_PUBLIC_NASA_API_KEY;
 
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=10`;
+
 
 export default function Nasa({}) {
   const [nasaArticles,  setNasaArticles] = useState([]);

@@ -1,13 +1,8 @@
-import Container from "../../../features/container";
-import Section from "../../../features/section";
-import Link from "../../../ui/link";
+import Container from "@/features/container";
 export default function Book({
   title,
-  publisher,
   description,
-  amazon_product_url,
   book_image,
-  contributor,
   author,
   book_image_height,
 }) {
@@ -28,7 +23,7 @@ export default function Book({
               </p>
             </div>
           </div>
-          <div className=" mt-3 text-left text-sm text-gray-800 md:w-1/2 ">
+          <div className=" mt-3 md:w-1/2 ">
             <div>
               <img
                 height={book_image_height}

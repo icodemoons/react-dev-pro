@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { calculateWinner } from "./helper";
 import Board from "./board";
-import Button from "@/ui/button";
+
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [stepNumber, setStepNumber] = useState(0);
@@ -43,9 +43,9 @@ export default function Game() {
           }`}
         >
           <p className="" key={move}>
-            <Button onClick={() => jumpTo(move)}>
+            <button onClick={() => jumpTo(move)}>
               {winner ? winner : move}
-            </Button>
+            </button>
           </p>
         </div>
       );
@@ -57,7 +57,7 @@ export default function Game() {
         <h3>React Tic Tac Toe - With Hooks</h3>
         <p>Check your move history</p>
 
-        <p> Press 0 or first choice to start the game over</p>
+        <p> Press 0 to start over</p>
 
         <div
           className="mx-auto flex w-3/5   space-x-8 pt-5 text-xl   

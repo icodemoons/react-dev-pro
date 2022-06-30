@@ -3,7 +3,7 @@ import Head from "next/head";
 import Container from "@/features/container";
 import SearchHeader from "@/features/projects/google/search-header";
 import SearchResults from "@/features/projects/google/search-results";
-import Link from "@/ui/link";
+import Link from "next/link";
 
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const CONTEXT_KEY = process.env.NEXT_PUBLIC_GOOGLE_CONTEXT_KEY;
