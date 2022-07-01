@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Link from "@/ui/link";
+import Link from "next/link";
 import Section from "@/features/section";
 import Container from "@/features/container";
 
