@@ -23,7 +23,7 @@ export default function Book({
               </p>
             </div>
           </div>
-          <div className=" mt-3 md:w-1/2 ">
+          <div className="mt-3 md:w-1/2 ">
             <div>
               <img
                 height={book_image_height}

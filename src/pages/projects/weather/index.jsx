@@ -6,10 +6,10 @@ import Location from "./location";
 import Moon from "./moon";
 import Temp from "./temp";
 
-// const weatherApiUrlKey = process.env.NEXT_PUBLIC_WEATHER_KEY;
-const weatherApiUrlKey = "32423a0f1606a4205a9fa5b43ee4944a";
-// const astroApiUrlKey = process.env.NEXT_PUBLIC_ASTRO_KEY;
-const astroApiUrlKey = "d21c77de239846ce87c184106212107";
+const weatherApiUrlKey = process.env.NEXT_PUBLIC_WEATHER_KEY;
+
+const astroApiUrlKey = process.env.NEXT_PUBLIC_ASTRO_KEY;
+
 
 export default function Weather() {
   const [query, setQuery] = useState("");
