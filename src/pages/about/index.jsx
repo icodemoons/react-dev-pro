@@ -30,15 +30,20 @@ export default function AboutMyArt({}) {
             <div className=" flex flex-grow text-xl text-white ">
               <p className="mt-10 text-2xl tracking-wide lg:m-0">
                 <span className="delay text-2xl tracking-wide  duration-1000  hover:text-ellipsis hover:text-yellow-400 md:text-3xl lg:text-4xl">
-                  I believe we all are here for to live the fullest and
+                  I believe we all are here to live the fullest and
                   brightest life we allow ourselves.{" "}
                 </span>{" "}
-                <br /> <br />
+                <br />
+                
+                 <br />
                 <span className="delay text-2xl tracking-wide duration-1000  hover:text-ellipsis md:text-3xl lg:text-3xl">
                   {" "}
+                  I bring 8+ years of a unique mixture of soft and
+                  technical skills and a fluid approach to problem-solving.
+
                   My mission in life is to enrich people with positive energy
-                  and creativity. I bring 8+ years of a unique mixture of soft /
-                  technical skills and a fluid approach to problem-solving.{" "}
+                  and creativity. 
+                
                 </span>
               </p>
             </div>

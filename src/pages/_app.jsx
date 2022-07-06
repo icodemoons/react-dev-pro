@@ -13,7 +13,7 @@ export default function App({ Component, pageProps, router }) {
         <motion.div
           key="dot"
           className="dot"
-          initial={{
+            initial={{
             opacity: 0,
           }}
           animate={{
@@ -70,3 +70,4 @@ export default function App({ Component, pageProps, router }) {
     </AnimatePresence>
   );
 }
+

@@ -14,7 +14,7 @@ export default function Datatable({ rows = [] }) {
   function sort(rows) {
     const { column, asc } = sortedBy;
     return rows.sort((a, b) => {
-      if (a[column].toString() > b[column].toString()) return asc ? -1 : 1;
+      if (a[column].toString() > b[column].toString()) return asc ? a + 1 : b + 1;
       if (b[column].toString() > a[column].toString()) return asc ? 1 : -1;
       return 0;
     });

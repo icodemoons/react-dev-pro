@@ -67,12 +67,14 @@ export default function Experience() {
                 Work Experience
               </dt>
               <dd className="leading-1 mt-1 text-base leading-normal   tracking-tight text-black sm:col-span-2 sm:mt-0">
+               
                 <div>
                   <strong>
                     Web Specialist/Designer, Marketing and Sales Associate.
                   </strong>
-                  <span className="float-right font-medium">2018-2021 </span>
+                  <span className="float-right font-medium">2018-2021</span>
                 </div>
+
                 <p>
                   <span className=" mt-1 text-black blur-sm hover:blur-none ">
                     {" "}

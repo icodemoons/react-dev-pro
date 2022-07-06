@@ -2,11 +2,10 @@ export default function Avatar({ url, className }) {
   return (
     <img
       loading="lazy"
-      className={`rounded-full h-10 cursor-pointer transition
-       duration-150 transform hover:scale-110 ${className}`}
+      className={`h-10 transform cursor-pointer rounded-full
+       transition duration-150 hover:scale-110 ${className}`}
       src={url}
       alt="profile pic"
     />
   );
 }
- 

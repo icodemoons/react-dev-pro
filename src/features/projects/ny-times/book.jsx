@@ -24,7 +24,7 @@ export default function Book({
             </div>
           </div>
           <div className="mt-3 md:w-1/2 ">
-            <div>
+            <div className="flex">
               <img
                 height={book_image_height}
                 className="lg:float-center w-full object-center px-5 md:w-full lg:w-3/6"
