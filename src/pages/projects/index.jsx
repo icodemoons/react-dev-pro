@@ -18,12 +18,6 @@ export default function ProjectsPage({}) {
           Projects built with Tailwind | React | Next JS
         </p>
 
-        <p className="dark:text-slate-400 mx-auto w-5/6 text-center text-lg lg:w-1/2 ">
-          These projects are a combination of fetching data (backend) from and
-          API / JSON file and displaying it in the browser and a data tool to
-          manage and sort json data for everyone in the office to use.
-        </p>
-
         <p className="dark:text-slate-400 mx-auto mb-5 w-5/6 text-center lg:w-1/2 ">
           <a href="https://www.github.com/icodemoons">
             <motion.img
