@@ -14,13 +14,14 @@ export default function CoverLetter() {
           with their e-commerce stores by taking their vision and turning it into a thriving reality. I have worked with a variety of clients, such as lawyers, interior designers, accountants, health companies, celebrities, hotels, start-ups, and airports. During this time, it was some of the most challenging but rewarding work I have ever done. I enjoy the challenge of working with various types of people and companies as I find it to be rewarding.
           <br />
           <br />
-          I grew up entertaining and performing in which I had the privilege to DJ, breakdance, and host events nationwide. I had the opportunity to work with celebrities and performed as a breakdancer at parties such as Ultra Music Festival in Miami, FL, and Austin City Limits in Austin, TX. My life quickly changed when my dance partner passed away. In 2014, I met an entrepreneurial friend that helped me pivot my life.
+          I grew up entertaining and performing in which I had the privilege to DJ, breakdance, and host events nationwide. I had the opportunity to work with celebrities and performed as a breakdancer at parties such as Ultra Music Festival in Miami, FL, and Austin City Limits in Austin, TX. In 2014 I was ready to take my creativy further and just so happen to meet an entrepreneurial friend and my life pivoted.
           <br />
           <br />
-          He ran a boutique business and web development agency. Right away I was immersed in a world of creativity, business development, marketing, and growth hacking- you name it and we did it! We wore many many hats and had lots of challenges. There was a year when my friend was in and out of the hospital and I had to hold it down, otherwise, we would have lost momentum. So, that meant me getting out of my comfort zone and managing client accounts among the work I was already doing. It was a difficult year but we pulled through with our two-man team. When my friend's father passed from being exposed to a bad chemical, my friend and I used our strengths and our commitment to creating a health and wellness company. It has been successful and is now expanding globally.
-          <br />
-          <br />
-          I know that I will bring my versatility, passion, kindness and creativity and the best of me to the role I am applying for or another that you might feel is a better fit.
+          He ran a boutique business and web development agency. Right away I was immersed into web and business development, marketing, graphic design, networking, DJing... you name it and we did it! We wore many many hats and we know how to entertain and bring vaule. I also assited in building a wellness start-up. Another proud moment is when I worked as a Front End Developer at RPImaging. I built a menu for the website using inline Javascript inside of divs.  
+
+          Through all of this experience and the diversity, I have a fluid approach to learning and can pick up any skill needed along the way. My focus at the moment is Functional Programming in JavaScript(Python or ... coming soon), React, NextJS and TailwindCSS. I went to a programming bootcamp for 3 months and learned full stack development with Node JS , Express and Angular. I also know Wordpress and all the other CMS websites.
+
+
           <br />
           <br />
           <span className="mr-2 bg-yellow-400 text-black">

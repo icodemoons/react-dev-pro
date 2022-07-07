@@ -32,12 +32,12 @@ export default function AboutMyArt({}) {
                 <span className="delay text-2xl tracking-wide  duration-1000  hover:text-ellipsis hover:text-yellow-400 md:text-3xl lg:text-4xl">
                   I believe we all are here to live the fullest and
                   brightest life we allow ourselves.{" "}
-                </span>{" "}
+                </span>
                 <br />
                 
                  <br />
                 <span className="delay text-2xl tracking-wide duration-1000  hover:text-ellipsis md:text-3xl lg:text-3xl">
-                  {" "}
+
                   I bring 8+ years of a unique mixture of soft and
                   technical skills and a fluid approach to problem-solving.
 
